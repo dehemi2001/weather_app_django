@@ -1,0 +1,49 @@
+# Secrets
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Default Django database file
+*.sqlite3
+db.sqlite3
+
+# Log files
+*.log
+
+# Django media and static files
+/staticfiles/
+
+# Virtual Environment
+env/
+venv/
+
+# Editor directories and files
+.vscode/
