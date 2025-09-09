@@ -128,3 +128,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://weather-app-django-x59n.onrender.com',
+]
