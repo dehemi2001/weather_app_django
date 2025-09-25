@@ -47,3 +47,10 @@ venv/
 
 # Editor directories and files
 .vscode/
+
+# Media files for user uploads
+/media/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
