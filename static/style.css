@@ -45,6 +45,8 @@ form {
   border-radius: 10px;
   color: rgb(5, 41, 51);
   height: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 input,
@@ -185,5 +187,21 @@ body {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(5, 41, 51);
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin-top: auto;
+  opacity: 0.6;
+}
+
+.footer p {
   margin: 0;
 }
