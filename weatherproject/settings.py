@@ -29,7 +29,7 @@ GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 GOOGLE_SEARCH_ENGINE_ID = os.getenv('GOOGLE_SEARCH_ENGINE_ID')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
