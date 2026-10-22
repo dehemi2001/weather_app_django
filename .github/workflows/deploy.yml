@@ -21,7 +21,16 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: /home/ubuntu/deploy_weather.sh
+          script: |
+            set -e
+            cd /home/ubuntu/weather_app_django
+            git fetch origin
+            git reset --hard origin/main
+            source venv/bin/activate
+            pip install -r requirements.txt
+            python manage.py collectstatic --noinput
+            python manage.py migrate --noinput
+            sudo systemctl restart gunicorn_weather
 
       - name: Health check
         run: curl -fsS https://weatherapp.dynv6.net/ || exit 1
